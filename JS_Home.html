@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      //1
+      let number = +prompt("Введите число");
+      alert("10% от числа " + number + " = " + number / 10);
+
+      //2
+      let number1 = +prompt("Введите первое число ");
+      let number2 = +prompt("Введите второе число ");
+      if (number1 > number2) {
+        alert(number1 + " > " + number2);
+      } else {
+        alert(number2 + " > " + number1);
+      }
+
+      //3
+      let number_compare_20 = +prompt("Введите число ");
+      if (number_compare_20 < 20) {
+        alert("Число " + number_compare_20 + " < " + 20);
+      } else if (number_compare_20 > 20) {
+        alert("Число " + number_compare_20 + " > " + 20);
+      } else {
+        alert("Число " + number_compare_20 + " = " + 20);
+      }
+
+      //4
+      let UserName = prompt("Введите Ваше имя");
+      let UserAge = +prompt("Введите Ваш возраст");
+      if (UserAge >= 18) {
+        alert("Hello");
+      } else {
+        alert("Hi");
+      }
+    </script>
+
+
+  </head>
+  <body>
+    <ol>
+      <li>
+        Написать программу, которая через prompt считывает число и выводит в
+        консоль число равное 10% от введенного числа
+      </li>
+
+      <li>
+        Написать программу, которая получает два числа и выводит наибольшее из
+        них
+      </li>
+
+      <li>
+        Написать программу, которая считывает через prompt число и выводит одно
+        из следующих сообщений: ‘Число меньше 20’, ‘Число больше 20’ или ‘Число
+        равно 20’
+      </li>
+
+      <li>
+        Написать программу, которая запрашивает у пользователя его имя и возраст
+        (в годах) и выводит в консоль сообщение ‘Hello, ’, если пользователь
+        совершеннолетний, или ‘Hi, ’, если пользователь несовершеннолетний.
+      </li>
+    </ol>
+    
+  </body>
+</html>
