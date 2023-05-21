@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //
+      //
+
+      // Нахождение товара с максимальной ценой
+      let products = [
+        { title: "product1", prise: 1000 },
+        { title: "product2", prise: 20000 },
+        { title: "product3", prise: 3000 },
+        { title: "product4", prise: 4000 },
+        { title: "product5", prise: 5000 },
+      ];
+
+      let max_index = 0;
+      function max_price_of__product(products) {
+        for (let n = 0; n < products.length; n++) {
+          if (products[max_index].prise > products[n].prise) {
+            max_index = max_index;
+          } else {
+            max_index = n;
+          }
+        }
+        return max_index;
+      }
+      max_price_of__product(products);
+      console.log(
+        `Самый дорогой товар ${products[max_index].title} стоит ${products[max_index].prise} EUR`
+      );
+
+      function sum_of_prices(products) {
+        let sum_all = 0;
+        for (let i = 0; i < products.length; i++) {
+          sum_all = sum_all + products[i].prise;
+        }
+        return sum_all;
+      }
+
+      console.log(`Сумарная стоимость товаров ${sum_of_prices(products)} EUR`);
+    </script>
+  </head>
+  <body>
+    <h3 align = "center">## Объект как структура данных в `JS`</h3>
+
+    <h4>Конспект</h4>
+
+    <ul>
+      <li>Объект реализует концепцию ассоциативного массива</li>
+      <li>неупорядоченный набор пар “ключ-значение”</li>
+    </ul>
+
+    <h4>Определение обьекта с developer.mozilla.org</h4>
+    <p>
+      Объект — это набор свойств, и каждое свойство состоит из имени и значения,
+      ассоциированного с этим именем. Значением свойства может быть функция,
+      которую можно назвать методом объекта. В дополнение к встроенным в браузер
+      объектам, вы можете определить свои собственные объекты.
+    </p>
+    <h4>Википедия</h4>
+    <p>
+      Объе́кт в программировании — сущность в цифровом пространстве, обладающая
+      состоянием и поведением, имеющая поля и методы. Как правило, при
+      рассмотрении объектов выделяется то, что объекты принадлежат одному или
+      нескольким классам, которые определяют поведение (являются моделью)
+      объекта. Термины «экземпляр класса» и «объект» взаимозаменяемы[1].
+      Аналогия: объект — то, что сделали по чертежу, класс — это чертёж. Объект,
+      наряду с понятием класс, является важным понятием
+      объектно-ориентированного подхода. Объекты обладают свойствами
+      наследования, инкапсуляции и полиморфизма[2]. Термин объект в программном
+      обеспечении впервые был введен в языке Simula и применялся для
+      моделирования реальности[1].
+    </p>
+  </body>
+</html>
