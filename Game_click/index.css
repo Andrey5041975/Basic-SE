@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(137, 116, 235);
+    display: flex;
+    justify-content: center;
+}
+
+#area {
+    background: #fff;
+    width: 400px;
+    aspect-ratio: 1;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#object {
+    background: orange;
+    width: 60px;
+    aspect-ratio: 1;
+    transform: translateY(-100%);
+    position: relative;
+}
+
+#object.start {
+    animation-name: movement;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transform: translateY(400px); */
+
+
+
+}
+/*анимация длижения объекта*/ 
+@keyframes movement { 
+    to {
+    transform: translateY(400px);
+    }
+}

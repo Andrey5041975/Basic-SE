@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>title</h1>
+
+    <script>
+      let title = document.querySelector("h1");
+      //title.style.color = "blue";
+
+      title.style.cssText = 'color: blue; background: gold';
+      title.style.cssText += 'border-bottom: 5px solid red';
+
+      function sum_numbers(num1, num2, callback) {
+        const result = num1 + num2;
+        callback(`Сложение завершено. Результат: ${result}`);
+        // console.log(num1+num2);
+      }
+
+      function show_result(result) {
+        console.log(result);
+      }
+
+      sum_numbers(2, 5, show_result);
+    </script>
+  </body>
+</html>
